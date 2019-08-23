@@ -26,7 +26,7 @@ function getGoogleAuthenticationInfo() {
 
     const authUrl = googleAuthorizationEndpoint + '?' +
         'response_type=code&' +
-        'scope=openid%20profile&' +
+        'scope=openid%20profile%20email&' +
         'client_id=' + googleClientId + '&' +
         'state=' + state + '&' +
         'code_challenge=' + challenge + '&' +

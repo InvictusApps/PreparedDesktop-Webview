@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const { createAuthWindow } = require('./google-auth-process');
 
-function createWindow () {
+function createWindow() {
     // Create the browser window.
     // let win = new BrowserWindow({
     //     width: 800,

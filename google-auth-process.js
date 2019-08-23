@@ -1,5 +1,6 @@
 const { BrowserWindow, protocol } = require('electron');
 const { redirectScheme } = require('./env-variables');
+const preparedApi = require('./prepared-api');
 const googleAuthService = require('./google-auth-service');
 const url = require('url');
 const querystring = require('querystring');
@@ -26,7 +27,7 @@ function createAuthWindow() {
 
         googleAuthService
             .getIdToken(authInfo.state, authInfo.verifier, parsedQs)
-            .then((idToken) => { console.log(idToken); })
+            .then((idToken) => preparedApi.login(idToken))
             .then(() => {
                 return destroyAuthWin();
             })
