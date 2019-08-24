@@ -1,4 +1,4 @@
-const { googleClientId, redirectScheme } = require('./env-variables');
+const { googleClientId, redirectScheme } = require('../env-variables');
 const request = require('request');
 const crypto = require('crypto');
 

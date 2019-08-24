@@ -1,20 +1,15 @@
-const { app, BrowserWindow } = require('electron');
-const { createAuthWindow } = require('./google-auth-process');
+const { app } = require('electron');
+const googleAuthProcess = require('./main/google-auth-process');
+const appProcess = require('./main/app-process');
+const preparedApi = require('./services/prepared-api-service');
 
-function createWindow() {
-    // Create the browser window.
-    // let win = new BrowserWindow({
-    //     width: 800,
-    //     height: 600,
-    //     webPreferences: {
-    //         nodeIntegration: true
-    //     }
-    // });
-    //
-    // // and load the index.html of the app.
-    // win.loadFile('index.html');
-
-    createAuthWindow();
+async function startup() {
+    try {
+        await preparedApi.refreshTokens();
+        return appProcess.createAppWindow();
+    } catch (err) {
+        googleAuthProcess.createAuthWindow();
+    }
 }
 
-app.on('ready', createWindow);
+app.on('ready', startup);

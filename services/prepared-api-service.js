@@ -119,14 +119,13 @@ function refreshTokens() {
                 return reject(error || body.error);
             }
 
-            const responseBody = JSON.parse(body);
-            if (!('access_token' in responseBody) || !('refresh_token' in responseBody)) {
+            if (!('access_token' in body) || !('refresh_token' in body)) {
                 await logout();
                 return reject('Tokens are not present');
             }
 
-            accessToken = responseBody.access_token;
-            let refreshToken = responseBody.refresh_token;
+            accessToken = body.access_token;
+            let refreshToken = body.refresh_token;
 
             await keytar.setPassword(keytarService, keytarAccount, refreshToken);
 
@@ -135,7 +134,50 @@ function refreshTokens() {
     });
 }
 
+function protectedRequest(httpMethod, endpoint, params = {}) {
+    return new Promise((resolve, reject) => {
+        if (accessToken == null) {
+            return reject('Access token is not set');
+        }
+
+        const requestOptions = {
+            method: httpMethod,
+            url: envInfo.endpoint + endpoint,
+            headers: {
+                'Authorization': `Bearer ${accessToken}`,
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(params)
+        };
+
+        request(requestOptions, (error, resp, body) => {
+            if (error || body.error) {
+                return reject(error || body.error);
+            }
+
+            resolve(body);
+        });
+    });
+}
+
+function getUserInfo() {
+    return new Promise((resolve, reject) => {
+        protectedRequest('GET', '/user/info')
+            .then((response) => {
+                response = JSON.parse(response);
+
+                resolve(response.user);
+            })
+            .catch((error) => {
+                console.log("Error fulfilling request: " + error);
+                reject(error);
+            });
+    });
+}
+
 module.exports = {
     login,
-    logout
+    logout,
+    refreshTokens,
+    getUserInfo
 };
