@@ -4,12 +4,14 @@ const appProcess = require('./main/app-process');
 const preparedApi = require('./services/prepared-api-service');
 
 async function startup() {
-    try {
-        await preparedApi.refreshTokens();
-        return appProcess.createAppWindow();
-    } catch (err) {
-        googleAuthProcess.createAuthWindow();
-    }
+    googleAuthProcess.createAuthWindow();
+
+    // try {
+    //     await preparedApi.refreshTokens();
+    //     return appProcess.createAppWindow();
+    // } catch (err) {
+    //     googleAuthProcess.createAuthWindow();
+    // }
 }
 
 app.on('ready', startup);

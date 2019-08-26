@@ -1,11 +1,11 @@
 const { remote } = require('electron');
 const preparedApi = remote.require('./services/prepared-api-service');
 
-const webContents = remote.getCurrentWebContents();
+const userInfo = preparedApi.getUserInfo();
 
-webContents.on('dom-ready', () => {
+window.addEventListener('DOMContentLoaded', () => {
     // Document ready setup
-    preparedApi.getUserInfo().then((user) => {
+    userInfo.then((user) => {
         document.getElementById('content-name').innerText = user.name;
     });
 });

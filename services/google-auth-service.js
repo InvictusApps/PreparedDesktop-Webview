@@ -15,7 +15,7 @@ function sha256(buffer) {
     return crypto.createHash('sha256').update(buffer).digest();
 }
 
-function getGoogleAuthenticationInfo() {
+function getAuthenticationInfo() {
     const googleAuthorizationEndpoint = "https://accounts.google.com/o/oauth2/v2/auth";
 
     const state = base64URLEncode(crypto.randomBytes(32));
@@ -90,6 +90,6 @@ function getIdToken(state, verifier, qs) {
 }
 
 module.exports = {
-    getGoogleAuthenticationInfo,
+    getAuthenticationInfo,
     getIdToken
 };
