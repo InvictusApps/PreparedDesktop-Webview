@@ -7,11 +7,17 @@
     "type": "git",
     "url": "https://github.com/dgleiche/PreparedDesktop"
   },
+  "build": {
+    "appId": "com.preparedapp.PreparedDesktop"
+  },
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Invictus Apps",
+    "email": "contact@preparedapp.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^6.0.2"
