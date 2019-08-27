@@ -3,8 +3,9 @@ directories:
   buildResources: build
 appId: com.preparedapp.PreparedDesktop
 productName: PREPARED
-copyright: Copyright ©2019 Invictus Apps ALL RIGHTS RESERVED
+copyright: Copyright ©2019 Invictus Apps
 buildVersion: 1.0.0
 win:
   target: nsis
+  icon: build/icon.png
 electronVersion: 6.0.2

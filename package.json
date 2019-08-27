@@ -1,7 +1,7 @@
 {
   "name": "prepared-desktop",
   "version": "1.0.0",
-  "description": "",
+  "description": "Emergency Communication Platform",
   "main": "main.js",
   "repository": {
     "type": "git",
@@ -10,17 +10,21 @@
   "build": {
     "appId": "com.preparedapp.PreparedDesktop",
     "productName": "PREPARED",
-    "copyright": "Copyright ©2019 Invictus Apps ALL RIGHTS RESERVED",
+    "copyright": "Copyright ©2019 Invictus Apps",
     "buildVersion": "1.0.0",
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "build/icon.png"
     }
   },
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dist-all": "electron-builder -mw",
+    "postinstall": "electron-builder install-app-deps",
+    "nodeGypRebuild": "true"
   },
   "author": {
     "name": "Invictus Apps",
@@ -29,7 +33,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^6.0.2",
-    "electron-builder": "^21.2.0"
+    "electron-builder": "^21.2.0",
+    "electron-rebuild": "^1.8.6"
   },
   "dependencies": {
     "electron-packager": "^14.0.4",
