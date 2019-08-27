@@ -1,0 +1,12 @@
+version: 1.0.0
+files:
+  - url: PREPARED-1.0.0-mac.zip
+    sha512: CyibGHP1zjGZ0QoSGopT/X35rJcrwWEvzeX27FwAGdgjpiZLMY5z203NUzkmq4/tWEtPjg3IAKfyNvO0FVzKiA==
+    size: 62031394
+    blockMapSize: 65852
+  - url: PREPARED-1.0.0.dmg
+    sha512: Vwz5kJeJ/iMZOkTXtJUOT5FUYKGkIv53hGNJziIRuKwp67Ci/8QGfNZm07C5E47CFKpxOcU5Fd2p2mplG3XyEw==
+    size: 63993200
+path: PREPARED-1.0.0-mac.zip
+sha512: CyibGHP1zjGZ0QoSGopT/X35rJcrwWEvzeX27FwAGdgjpiZLMY5z203NUzkmq4/tWEtPjg3IAKfyNvO0FVzKiA==
+releaseDate: '2019-08-27T07:35:59.859Z'
