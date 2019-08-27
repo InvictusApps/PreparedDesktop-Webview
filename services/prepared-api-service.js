@@ -1,5 +1,5 @@
 const request = require('request');
-const keytar = require('keytar');
+// const keytar = require('keytar');
 const os = require('os');
 
 const keytarService = 'invictus-prepared-desktop';
@@ -56,7 +56,7 @@ function login(idToken) {
             accessToken = responseBody.access_token;
             let refreshToken = responseBody.refresh_token;
 
-            await keytar.setPassword(keytarService, keytarAccount, refreshToken);
+            // await keytar.setPassword(keytarService, keytarAccount, refreshToken);
 
             resolve();
         });
@@ -88,51 +88,51 @@ function logout() {
                 return reject(error || body.error);
             }
 
-            await keytar.deletePassword(keytarService, keytarAccount);
+            // await keytar.deletePassword(keytarService, keytarAccount);
             accessToken = null;
         });
     });
 }
-
-function refreshTokens() {
-    return new Promise(async (resolve, reject) => {
-        const refreshToken = await keytar.getPassword(keytarService, keytarAccount);
-
-        if (!refreshToken) return reject();
-
-        const refreshOptions = {
-            method: 'POST',
-            url: envInfo.endpoint + '/oauth/token',
-            headers: { 'content-type': 'application/json' },
-            body: {
-                grant_type: 'refresh_token',
-                origin: 'desktop',
-                client_id: envInfo.client_id,
-                refresh_token: refreshToken
-            },
-            json: true
-        };
-
-        request(refreshOptions, async function (error, response, body) {
-            if (error || body.error) {
-                await logout();
-                return reject(error || body.error);
-            }
-
-            if (!('access_token' in body) || !('refresh_token' in body)) {
-                await logout();
-                return reject('Tokens are not present');
-            }
-
-            accessToken = body.access_token;
-            let refreshToken = body.refresh_token;
-
-            await keytar.setPassword(keytarService, keytarAccount, refreshToken);
-
-            resolve();
-        })
-    });
-}
+//
+// function refreshTokens() {
+//     return new Promise(async (resolve, reject) => {
+//         const refreshToken = await keytar.getPassword(keytarService, keytarAccount);
+//
+//         if (!refreshToken) return reject();
+//
+//         const refreshOptions = {
+//             method: 'POST',
+//             url: envInfo.endpoint + '/oauth/token',
+//             headers: { 'content-type': 'application/json' },
+//             body: {
+//                 grant_type: 'refresh_token',
+//                 origin: 'desktop',
+//                 client_id: envInfo.client_id,
+//                 refresh_token: refreshToken
+//             },
+//             json: true
+//         };
+//
+//         request(refreshOptions, async function (error, response, body) {
+//             if (error || body.error) {
+//                 await logout();
+//                 return reject(error || body.error);
+//             }
+//
+//             if (!('access_token' in body) || !('refresh_token' in body)) {
+//                 await logout();
+//                 return reject('Tokens are not present');
+//             }
+//
+//             accessToken = body.access_token;
+//             let refreshToken = body.refresh_token;
+//
+//             await keytar.setPassword(keytarService, keytarAccount, refreshToken);
+//
+//             resolve();
+//         })
+//     });
+// }
 
 function protectedRequest(httpMethod, endpoint, params = {}) {
     return new Promise((resolve, reject) => {
@@ -178,6 +178,6 @@ function getUserInfo() {
 module.exports = {
     login,
     logout,
-    refreshTokens,
+    // refreshTokens,
     getUserInfo
 };
