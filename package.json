@@ -11,7 +11,10 @@
     "appId": "com.preparedapp.PreparedDesktop",
     "productName": "PREPARED",
     "copyright": "Copyright ©2019 Invictus Apps",
-    "buildVersion": "1.0.0"
+    "buildVersion": "1.0.0",
+    "win": {
+      "target": "appx"
+    }
   },
   "scripts": {
     "start": "electron .",
