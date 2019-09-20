@@ -1,8 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: com.preparedapp.PreparedDesktop
-productName: PREPARED
-copyright: Copyright ©2019 Invictus Apps
-buildVersion: 1.0.0
-electronVersion: 6.0.4

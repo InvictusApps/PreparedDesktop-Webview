@@ -1,0 +1,14 @@
+{
+  "productName": "PREPARED",
+  "copyright": "Copyright ©2019 Invictus Apps",
+  "buildVersion": "1.0.0",
+  "appx": {
+    "applicationId": "InvictusApps.PreparedDesktop",
+    "displayName": "PREPARED by Invictus Apps",
+    "identityName": "InvictusApps.PreparedApp",
+    "publisher": "CN=66CE4048-2F58-4BD0-AE3E-DD8C95E21D46"
+  },
+  "win": {
+    "target": "nsis"
+  }
+}

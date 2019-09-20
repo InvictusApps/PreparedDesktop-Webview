@@ -17,11 +17,11 @@ function createAuthWindow() {
         height: 600,
     });
 
+    return win.loadURL('https://console.preparedapp.com');
+
     let authInfo = googleAuthService.getAuthenticationInfo();
 
     // win.loadURL(authInfo.url);
-
-    return win.loadURL('https://console.preparedapp.com');
 
     protocol.registerHttpProtocol(redirectScheme, async (request) => {
         const rawUrl = request.url;

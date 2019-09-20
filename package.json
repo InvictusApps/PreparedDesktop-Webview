@@ -7,15 +7,6 @@
     "type": "git",
     "url": "https://github.com/dgleiche/PreparedDesktop"
   },
-  "build": {
-    "appId": "com.preparedapp.PreparedDesktop",
-    "productName": "PREPARED",
-    "copyright": "Copyright ©2019 Invictus Apps",
-    "buildVersion": "1.0.0",
-    "win": {
-      "target": "appx"
-    }
-  },
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +14,8 @@
     "dist": "electron-builder",
     "dist-all": "electron-builder -mw",
     "postinstall": "electron-builder install-app-deps",
-    "nodeGypRebuild": "true"
+    "nodeGypRebuild": "true",
+    "win-publish": "build --win -p always"
   },
   "author": {
     "name": "Invictus Apps",
@@ -37,7 +29,9 @@
   },
   "dependencies": {
     "electron-packager": "^14.0.4",
+    "electron-updater": "^4.1.2",
     "querystring": "^0.2.0",
+    "ramda": "^0.26.1",
     "request": "^2.88.0",
     "url": "^0.11.0"
   }
