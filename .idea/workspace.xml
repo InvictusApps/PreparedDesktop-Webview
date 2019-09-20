@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f310300b-9106-4f29-b81e-5356e06bb76f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/electron-builder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PREPARED Setup 1.0.0.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PREPARED Setup 1.0.0.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PREPARED Setup 1.0.0.exe.blockmap" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PREPARED Setup 1.0.0.exe.blockmap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PREPARED-1.0.0-mac.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PREPARED-1.0.0-mac.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PREPARED-1.0.0.dmg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PREPARED-1.0.0.dmg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PREPARED-1.0.0.dmg.blockmap" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PREPARED-1.0.0.dmg.blockmap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/builder-effective-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dist/builder-effective-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/latest-mac.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dist/latest-mac.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/latest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dist/latest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libEGL.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libEGL.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libGLESv2.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libGLESv2.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/crashpad_handler" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/crashpad_handler" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (GPU).app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (GPU).app/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (GPU).app/Contents/MacOS/PREPARED Helper (GPU)" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (GPU).app/Contents/MacOS/PREPARED Helper (GPU)" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Plugin).app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Plugin).app/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Plugin).app/Contents/MacOS/PREPARED Helper (Plugin)" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Plugin).app/Contents/MacOS/PREPARED Helper (Plugin)" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Renderer).app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Renderer).app/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Renderer).app/Contents/MacOS/PREPARED Helper (Renderer)" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper (Renderer).app/Contents/MacOS/PREPARED Helper (Renderer)" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper.app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper.app/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper.app/Contents/MacOS/PREPARED Helper" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/PREPARED Helper.app/Contents/MacOS/PREPARED Helper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/ReactiveCocoa.framework/Versions/A/ReactiveCocoa" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/ReactiveCocoa.framework/Versions/A/ReactiveCocoa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/MacOS/PREPARED" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/MacOS/PREPARED" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Resources/app.asar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mac/PREPARED.app/Contents/Resources/app.asar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/win-unpacked/resources/app.asar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/win-unpacked/resources/app.asar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electron-builder.json" beforeDir="false" afterPath="$PROJECT_DIR$/electron-builder.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/google-auth-process.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/google-auth-process.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/google-auth-process.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+            <state relative-caret-position="225">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -63,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+            <state relative-caret-position="1260">
+              <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -109,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/electron-builder.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -118,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -161,9 +128,9 @@
         <option value="$PROJECT_DIR$/services/prepared-api-service.js" />
         <option value="$PROJECT_DIR$/renderers/home_preload.js" />
         <option value="$PROJECT_DIR$/main/app-process.js" />
-        <option value="$PROJECT_DIR$/main/google-auth-process.js" />
         <option value="$PROJECT_DIR$/electron-builder.json" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/main/google-auth-process.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -246,12 +213,12 @@
       <workItem from="1565676438912" duration="70000" />
       <workItem from="1566527900499" duration="19503000" />
       <workItem from="1567532452729" duration="266000" />
-      <workItem from="1568813654629" duration="4307000" />
+      <workItem from="1568813654629" duration="5097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24146000" />
+    <option name="totallyTimeSpent" value="24936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="955" extended-state="0" />
@@ -320,24 +287,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/app-process.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/renderers/home_preload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/renderers/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -359,34 +312,48 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/google-auth-process.js">
+    <entry file="file://$PROJECT_DIR$/renderers/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/electron-builder.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/renderers/home.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/electron-builder.json">
+    <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/main/app-process.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/google-auth-process.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>

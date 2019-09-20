@@ -1,6 +1,6 @@
 {
   "name": "prepared-desktop",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Emergency Communication Platform",
   "main": "main.js",
   "repository": {
@@ -15,7 +15,7 @@
     "dist-all": "electron-builder -mw",
     "postinstall": "electron-builder install-app-deps",
     "nodeGypRebuild": "true",
-    "win-publish": "build --win -p always"
+    "win-publish": "electron-builder --win -p always"
   },
   "author": {
     "name": "Invictus Apps",

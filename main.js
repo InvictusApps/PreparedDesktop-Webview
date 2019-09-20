@@ -5,24 +5,6 @@ const preparedApi = require('./services/prepared-api-service');
 const { autoUpdater } = require('electron-updater');
 const { clone } = require('ramda');
 
-const template = [{
-    label: app.getName(),
-    submenu: [
-        { label: `Version ${app.getVersion()}`, enabled: false },
-        { label: 'Check for updates', enabled: false, click: () => checkForUpdates({ silent: false }) },
-        { type: 'separator' },
-        { role: 'services' },
-        { type: 'separator' },
-        { role: 'hide' },
-        { role: 'hideothers' },
-        { role: 'unhide' },
-        { type: 'separator' },
-        { role: 'quit' }
-    ]
-}];
-const menu = Menu.buildFromTemplate(template);
-Menu.setApplicationMenu(menu);
-
 const changeUpdaterMenu = ({ label, enabled }) => {
     const newTemplate = clone(template);
     newTemplate[0].submenu[1].label = label;
@@ -107,23 +89,23 @@ autoUpdater.on('updated-downloaded', () => {
     autoUpdater.quitAndInstall();
 });
 
-function checkForUpdates({ silent }) {
-    isSilent = silent;
-    changeUpdaterMenu({ label: 'Checking for updates...', enabled: false });
-    if (updateDownloaded) {
-        dialog.showMessageBox({
-            title: 'Available Updates',
-            message: 'New updates are available and ready to be installed.',
-            defaultId: 0,
-            cancelId: 1,
-            buttons: ['Install and restart', 'Close']
-        }, (buttonIndex) => {
-            if (buttonIndex === 0)
-                setImmediate(() => autoUpdater.quitAndInstall());
-            else
-                changeUpdaterMenu({ label: 'Updates available', enabled: true });
-        })
-    } else {
-        autoUpdater.checkForUpdates();
-    }
-}
+// function checkForUpdates({ silent }) {
+//     isSilent = silent;
+//     changeUpdaterMenu({ label: 'Checking for updates...', enabled: false });
+//     if (updateDownloaded) {
+//         dialog.showMessageBox({
+//             title: 'Available Updates',
+//             message: 'New updates are available and ready to be installed.',
+//             defaultId: 0,
+//             cancelId: 1,
+//             buttons: ['Install and restart', 'Close']
+//         }, (buttonIndex) => {
+//             if (buttonIndex === 0)
+//                 setImmediate(() => autoUpdater.quitAndInstall());
+//             else
+//                 changeUpdaterMenu({ label: 'Updates available', enabled: true });
+//         })
+//     } else {
+//         autoUpdater.checkForUpdates();
+//     }
+// }
