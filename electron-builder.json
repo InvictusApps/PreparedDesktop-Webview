@@ -7,9 +7,20 @@
     "applicationId": "InvictusApps.PreparedDesktop",
     "displayName": "PREPARED by Invictus Apps",
     "identityName": "InvictusApps.PreparedApp",
-    "publisher": "CN=66CE4048-2F58-4BD0-AE3E-DD8C95E21D46"
+    "publisher": "CN=66CE4048-2F58-4BD0-AE3E-DD8C95E21D46",
+    "backgroundColor": "orange"
+  },
+  "directories": {
+    "buildResources": "build"
   },
   "win": {
-    "target": "nsis"
-  }
+    "publisherName": "Invictus Apps",
+    "icon": "build/appx/StoreLogo.png",
+    "target": [
+      "nsis",
+      "appx",
+      "msi"
+    ]
+  },
+  "files": [ "**/*", "build/icon.*" ]
 }
